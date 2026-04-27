@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Lonkar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero fade">
+        <div class="hero-text">
+            <div class="badge">Open to Opportunities</div>
+            <h1>Hi, I'm <span class="hero-name">Rohit Lonkar</span> 👋</h1>
+            <div class="typing" id="typing"></div>
+            <p class="hero-desc">Computer Engineering student at MIT ADT University (CSE '28). Aspiring Data Analyst crafting real-world solutions with Python, SQL &amp; Data Science.</p>
+            <div class="cta-row">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="avatar-wrap">
+            <img src="rohit_pf.jpeg" alt="Rohit Lonkar" class="avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="avatar-fallback">RL</div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade sec">
+        <div class="section-label">Who I am</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">2nd year Computer Engineering student at MIT ADT University, Pune. I completed my diploma with 84.51% and have a strong foundation in programming. I completed a 6-week internship at V2V EdTech LLP in Python for Data Science, working with real
+            datasets and building data analysis pipelines.</p>
+        <div class="about-grid">
+            <div class="about-stat">
+                <div class="num">84.51%</div>
+                <div class="lbl">Diploma Score</div>
+            </div>
+            <div class="about-stat">
+                <div class="num">6wk</div>
+                <div class="lbl">Internship</div>
+            </div>
+            <div class="about-stat">
+                <div class="num">4</div>
+                <div class="lbl">Projects</div>
+            </div>
+            <div class="about-stat">
+                <div class="num">8+</div>
+                <div class="lbl">Skills</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <div class="sec-alt">
+        <section id="experience" class="sec fade">
+            <div class="section-label">Work</div>
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <h3>Python for Data Science Intern</h3>
+                        <div class="meta">V2V EdTech LLP &nbsp;·&nbsp; 6 Weeks</div>
+                        <ul>
+                            <li>Data analysis using Python (NumPy, Pandas, Matplotlib)</li>
+                            <li>Data cleaning, preprocessing, and visualization</li>
+                            <li>Worked with real-world datasets end-to-end</li>
+                            <li>Learned industry data workflow best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- EDUCATION -->
+    <section id="education" class="fade sec">
+        <div class="section-label">Academic</div>
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <h3>B.Tech — Computer Engineering (CSE)</h3>
+                    <div class="meta">MIT ADT University, Pune &nbsp;·&nbsp; 2024 – 2028</div>
+                    <p class="tl-desc">Currently in 2nd year, specializing in data science and software development.</p>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <h3>Diploma in Engineering</h3>
+                    <div class="meta">84.51% Aggregate</div>
+                    <p class="tl-desc">Strong foundation in core engineering principles and programming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <div class="sec-alt">
+        <section id="skills" class="sec fade">
+            <div class="section-label">Stack</div>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-group">
+                <p class="skills-cat">Languages</p>
+                <div class="skills-grid">
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">HTML / CSS</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <p class="skills-cat">Libraries &amp; Tools</p>
+                <div class="skills-grid">
+                    <span class="skill-pill">NumPy</span>
+                    <span class="skill-pill">Pandas</span>
+                    <span class="skill-pill">Matplotlib</span>
+                    <span class="skill-pill">Data Analysis</span>
+                    <span class="skill-pill">Data Visualization</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade sec">
+        <div class="section-label">Work I've done</div>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="proj-card">
+                <span class="proj-tag">Data Analysis</span>
+                <h3>Gurgaon Real Estate Analysis</h3>
+                <p>Exploratory data analysis on Gurgaon property market — price trends, location hotspots, and key factors affecting real estate valuations.</p>
+                <div class="proj-techs">
+                    <span class="proj-tech">Python</span>
+                    <span class="proj-tech">Pandas</span>
+                    <span class="proj-tech">Matplotlib</span>
+                    <span class="proj-tech">Seaborn</span>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <span class="proj-tag">Database</span>
+                <h3>SQL E-Commerce DB</h3>
+                <p>Designed and implemented a relational database schema for an e-commerce platform with queries for sales, inventory, and user analytics.</p>
+                <div class="proj-techs">
+                    <span class="proj-tech">MySQL</span>
+                    <span class="proj-tech">SQL</span>
+                    <span class="proj-tech">ER Design</span>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <span class="proj-tag">Automation</span>
+                <h3>File Organizer</h3>
+                <p>Python script that automatically sorts and organizes files into categorized folders based on file type — eliminating manual folder management.</p>
+                <div class="proj-techs">
+                    <span class="proj-tech">Python</span>
+                    <span class="proj-tech">os module</span>
+                    <span class="proj-tech">shutil</span>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <span class="proj-tag">Game</span>
+                <h3>Snake Water Gun <span class="soon-badge">Fun</span></h3>
+                <p>Python-based implementation of the classic Snake-Water-Gun game with score tracking and replay functionality.</p>
+                <div class="proj-techs">
+                    <span class="proj-tech">Python</span>
+                    <span class="proj-tech">Random</span>
+                    <span class="proj-tech">CLI</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="sec-alt">
+        <section id="contact" class="sec fade">
+            <div class="section-label">Say hi</div>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-desc">Feel free to reach out — always happy to connect!</p>
+            <div class="contact-wrap">
+                <div class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <h4>Email</h4>
+                    <a href="mailto:lonkarrohit77@gmail.com">lonkarrohit77@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">in</div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/rohit-lonkar-746948274" target="_blank">rohit-lonkar</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">{}</div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/rohitlonkar2006" target="_blank">rohitlonkar2006</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Crafted with care by Rohit Lonkar &nbsp;·&nbsp; © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
