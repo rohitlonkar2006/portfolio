@@ -1,5 +1,5 @@
 // Typing animation
-const text = "Building AI Research Assistants and Intelligent Applications";
+const text = "Learning Agentic AI";
 let i = 0;
 
 function typing() {
@@ -29,7 +29,9 @@ document.querySelector('.hero').classList.add('show');
 const slides = document.querySelectorAll('.cert-slide');
 const prevBtn = document.querySelector('.slider-btn.prev');
 const nextBtn = document.querySelector('.slider-btn.next');
+const certSlider = document.querySelector('.cert-slider');
 let currentSlide = 0;
+let slideInterval;
 
 function updateSlide(index) {
     slides.forEach((slide, idx) => {
@@ -37,14 +39,38 @@ function updateSlide(index) {
     });
 }
 
-prevBtn.addEventListener('click', () => {
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide(currentSlide);
+}
+
+function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     updateSlide(currentSlide);
+}
+
+function startSlideShow() {
+    slideInterval = setInterval(nextSlide, 5500);
+}
+
+function stopSlideShow() {
+    clearInterval(slideInterval);
+}
+
+prevBtn.addEventListener('click', () => {
+    prevSlide();
+    stopSlideShow();
+    startSlideShow();
 });
 
 nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlide(currentSlide);
+    nextSlide();
+    stopSlideShow();
+    startSlideShow();
 });
 
+certSlider.addEventListener('mouseenter', stopSlideShow);
+certSlider.addEventListener('mouseleave', startSlideShow);
+
 updateSlide(currentSlide);
+startSlideShow();
