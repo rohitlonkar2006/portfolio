@@ -474,6 +474,12 @@ body {
     font-weight: 600;
 }
 
+.proj-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .proj-card h3 {
     font-size: 0.97rem;
     font-weight: 700;
@@ -486,6 +492,24 @@ body {
     color: var(--muted);
     line-height: 1.65;
     margin-bottom: 16px;
+}
+
+.proj-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+}
+
+.proj-link-label {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.proj-link-label:hover {
+    text-decoration: underline;
 }
 
 .proj-techs {
