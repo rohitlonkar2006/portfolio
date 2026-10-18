@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d18">
     <title>Rohit Lonkar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="nav">
-        <a href="#home">Home</a>
+        <a href="#home" aria-current="location">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
@@ -37,7 +40,7 @@
             </p>
 
             <div class="cta-row">
-                <a href="#projects" class="btn-primary">View Project</a>
+                <a href="#projects" class="btn-primary">View Projects</a>
                 <a href="#contact" class="btn-outline">Get In Touch</a>
             </div>
         </div>
@@ -78,8 +81,8 @@
             </div>
 
             <div class="about-stat">
-                <div class="num">1</div>
-                <div class="lbl">Featured Project</div>
+                <div class="num">2</div>
+                <div class="lbl">Featured Projects</div>
             </div>
 
         </div>
@@ -215,6 +218,18 @@
                 </div>
                 <span class="proj-link-label">Open GitHub repository</span>
             </a>
+            <a class="proj-card proj-link-card" href="https://github.com/rohitlonkar2006/Data-Agent" target="_blank" rel="noreferrer">
+                <span class="proj-tag">AI Data Agent</span>
+                <h3>Data Agent</h3>
+                <p>An AI-powered data assistant that routes natural-language requests to PostgreSQL analysis or API extraction and pandas transformation workflows.</p>
+                <div class="proj-techs">
+                    <span class="proj-tech">Python</span>
+                    <span class="proj-tech">LangGraph</span>
+                    <span class="proj-tech">PostgreSQL</span>
+                    <span class="proj-tech">Streamlit</span>
+                </div>
+                <span class="proj-link-label">Explore Data Agent on GitHub</span>
+            </a>
         </div>
     </section>
 
@@ -279,6 +294,8 @@
     <footer class="footer">
         <p>Crafted with care by Rohit Lonkar &nbsp;·&nbsp; © 2026</p>
     </footer>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
 
     <script src="script.js"></script>
 </body>
